@@ -1,5 +1,6 @@
 
 def create_file(diretory, file_name,itens_extract):
+
     try:
         file = open(diretory + '\\' + file_name, 'r+', encoding="ANSI")
     except FileNotFoundError:

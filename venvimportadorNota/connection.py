@@ -13,7 +13,7 @@ portdborigin = 3050
 
 class BdConnections:
 
-    def __init__(self, host='localhost', port='5432', bd_name='NotaCasteloBranco', user='NotaCasteloBranco', password='es74079'):
+    def __init__(self, host='localhost', port=3050, bd_name='C:\\Users\\richielly.carvalho\\Desktop\\324\\equiplano.fdb', user='sysdba', password='masterkey'):
         self.host = host
         self.port = port
         self.bd_name = bd_name
@@ -32,8 +32,10 @@ class BdConnections:
         return con
 
     def firebird_connection(self):
-        conn = fdb.connect(host=conect.host,
-                          database=conect.bd_name,
+
+        conect = BdConnections()
+
+        conn = fdb.connect(host=conect.host, database=conect.bd_name,
                           user=conect.user,
                           password=conect.password,
                           port=conect.port)

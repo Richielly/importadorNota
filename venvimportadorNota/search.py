@@ -6,7 +6,8 @@ class Search():
 
         conect = connection.BdConnections()
 
-        conn = conect.postgre_connection()
+        conn = conect.firebird_connection()
+        # conn = conect.postgre_connection()
         cur = conn.cursor()
         cur.execute(script)
         lista = cur.fetchall()
