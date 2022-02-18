@@ -12,7 +12,7 @@ import os as sys
 import data
 
 file_names = ['ServicoAeItem', 'ServicoAeSubItem', 'Entidade', 'Pessoa', 'Operador']
-diretory = st.text_input('Caminho dos Arquivos:',"C:\\Users\\richielly.carvalho\\Desktop\\TesteExtractfrotas\\")
+diretory = st.text_input('Caminho dos Arquivos:',"C:\\Users\\richielly.carvalho\\Desktop\\ExtractFrotasUnificaBalsaNova\\")
 
 
 menu = st.sidebar.radio('Exportador Arquivos',('Exportador do Banco', 'Exportador de Arquivo'))
