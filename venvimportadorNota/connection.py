@@ -22,13 +22,13 @@ class BdConnections:
 
     def postgre_connection(self):
 
-        conect = BdConnections()
+        # conect = BdConnections()
 
-        con = psycopg2.connect(host=conect.host,
-                    port=conect.port,
-                    dbname=conect.bd_name,
-                    user=conect.user,
-                    password=conect.password)
+        con = psycopg2.connect(host=self.host,
+                    port=self.port,
+                    dbname=self.bd_name,
+                    user=self.user,
+                    password=self.password)
         return con
 
     def firebird_connection(self):
